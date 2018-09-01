@@ -25,7 +25,7 @@
 <div id="sidebar"></div>
 <div id="main"></div>
 <div id="modal">
-Study Suggesterへようこそ。<br>さっそく始めましょう！	
+現在、このサイトは準備中です<br>今暫くお待ちください	
 </div>
 </body>
 </html>

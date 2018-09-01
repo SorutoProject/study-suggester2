@@ -5,10 +5,10 @@ function welcomeMessage(){
         modal:true,
         title:"Modal",
         appendTo:"#main",
-        buttons:{
+        /*buttons:{
             "OK":function(){
             $(this).dialog("close");
-            }
+            }*/
         }
     });
 }
