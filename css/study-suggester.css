@@ -1,0 +1,29 @@
+*{
+  font-family: 'メイリオ', Meiryo,'ヒラギノ角ゴシック','Hiragino Sans',TakaoPGothic,sans-serif;
+}
+#headbar{
+  position:absolute;
+  top:0;
+  left:0;
+  width:calc(100% - 10px);
+  height:30px;
+  background-color:#5c5c5c;
+  padding-left:10px;
+  color:#fafafa;
+}
+#sidebar{
+  position:absolute;
+  top:30px;
+  left:0;
+  width:120px;
+  height:calc(100% - 30px);
+  background-color:#ddd;
+}
+#main{
+  position:absolute;
+  top:30px;
+  left:120px;
+  width:calc(100% - 120px);
+  height: calc(100% - 30px);
+  background-color:#eee;
+}
