@@ -4,11 +4,11 @@ function welcomeMessage(){
     modal.dialog({
         modal:true,
         title:"Modal",
-        appendTo:"#main",
+        appendTo:"#main"
         /*buttons:{
             "OK":function(){
             $(this).dialog("close");
-            }*/
-        }
+            }
+        }*/
     });
 }
