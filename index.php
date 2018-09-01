@@ -11,7 +11,9 @@
 <script src="js/jquery-ui.min.js"></script>
 <script>
 <?php
-	if($_COOKIE["accessed"] == "accessed"){}
+	if($_COOKIE["accessed"] == "accessed"){
+		echo 'window.onload = function(){welcomeMessage();}';
+	}
 	else{
 		echo 'window.onload = function(){welcomeMessage();}';
 		setcookie("accessed","accessed",time() + 172800);
