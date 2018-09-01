@@ -24,8 +24,27 @@
 </head>
 <body>
 <div id="headbar">Study Suggester</div>
-<div id="sidebar"></div>
-<div id="main"></div>
+<div id="sidebar">
+<!--メニューバーのcontentをPHPで取得-->
+<?php
+	readfile("./contents/sidebar/index.content");
+?>
+</div>
+<div id="main">
+<?php
+if($_GET["page"]){
+	$pagename = "./contents/main/" . $_GET["page"] . ".content";
+}else{
+	$pagename = "./contents/main/home.content";
+}
+//ファイル取得
+if(is_readable($pagename)){
+	echo readfile($pagename);
+}else{
+	echo "<h4>404 Not Found</h4>要求されたページ \"" + $_GET["page"] + "\"が見つかりませんでした。<br>直接URLを入力された場合は、URLを確認してください。";
+}
+?>
+</div>
 <div id="modal">
 現在、このサイトは準備中です<br>今暫くお待ちください	
 </div>
