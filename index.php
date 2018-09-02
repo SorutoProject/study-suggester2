@@ -38,8 +38,8 @@ if($_GET["page"]){
 	$pagename = "./contents/main/home.content";
 }
 //ファイル取得
-if(is_readable($pagename)){
-	echo readfile($pagename);
+if(file_exists($pagename)){
+	readfile($pagename);
 }else{
 	echo "<h4>404 Not Found</h4>要求されたページ \"" + $_GET["page"] + "\"が見つかりませんでした。<br>直接URLを入力された場合は、URLを確認してください。";
 }
