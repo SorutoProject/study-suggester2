@@ -42,7 +42,7 @@ if($_GET["page"]){
 if(file_exists($pagename)){
 	readfile($pagename);
 }else{
-	echo "<h4>404 Not Found</h4>要求されたページ \"" + $_GET["page"] + "\"が見つかりませんでした。<br>直接URLを入力された場合は、URLを確認してください。";
+	echo "<h4>404 Not Found</h4>要求されたページ \"" . $_GET["page"] . "\"が見つかりませんでした。<br>直接URLを入力された場合は、URLを確認してください。";
 }
 ?>
 </div>
