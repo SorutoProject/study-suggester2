@@ -12,9 +12,7 @@
 <script src="js/jquery-ui.min.js"></script>
 <script>
 <?php
-	if($_COOKIE["accessed"] == "accessed"){
-		echo 'window.onload = function(){welcomeMessage();}';
-	}
+	if($_COOKIE["accessed"] == "accessed"){	}
 	else{
 		echo 'window.onload = function(){welcomeMessage();}';
 		setcookie("accessed","accessed",time() + 172800);
@@ -47,7 +45,7 @@ if(file_exists($pagename)){
 ?>
 </div>
 <div id="modal">
-現在、このサイトは準備中です<br>今暫くお待ちください	
+Study Suggesterへようこそ。<br>早速始めましょう。
 </div>
 </body>
 </html>

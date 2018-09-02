@@ -2,7 +2,7 @@ function welcomeMessage(){
     var modal = $("#modal");
     modal.dialog({
         modal:true,
-        title:"Modal",
+        title:"Welcome",
         appendTo:"#main"
         /*buttons:{
             "OK":function(){
